@@ -3,4 +3,4 @@
 
 yarn run sort-package
 yarn run lint
-yarn run test
+yarn run test:unit
