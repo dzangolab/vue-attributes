@@ -2,10 +2,7 @@
   "name": "@dzangolab/vue-attributes",
   "version": "0.1.0",
   "description": "Attributes components for vue .js (vue3)",
-  "keywords": [
-    "vuejs",
-    "attributes"
-  ],
+  "keywords": ["vuejs", "attributes"],
   "homepage": "https://github.com/dzangolab/vue-attributes",
   "bugs": "https://github.com/dzangolab/vue-attributes/issues",
   "repository": {
@@ -19,14 +16,7 @@
     "url": "https://www.dzangolab.com"
   },
   "main": "./dist/attributes.common.js",
-  "files": [
-    "*.js",
-    "*.json",
-    "*.ts",
-    "dist/*",
-    "lib/*",
-    "public/*"
-  ],
+  "files": ["*.js", "*.json", "*.ts", "dist/*", "lib/*", "public/*"],
   "scripts": {
     "build": "vue-cli-service build --target lib --name attributes ./lib/index.js",
     "commitlint": "commitlint --edit $1",
@@ -37,7 +27,8 @@
     "prerelease": "yarn run test",
     "serve": "vue-cli-service serve",
     "test": "yarn run test:unit",
-    "test:unit": "vue-cli-service test:unit"
+    "test:unit": "vue-cli-service test:unit",
+    "release": "shipjs prepare"
   },
   "devDependencies": {
     "@commitlint/cli": "15.0.0",
@@ -60,6 +51,7 @@
     "husky": "7.0.4",
     "node-sass": "^6.0.1",
     "sass-loader": "^10.2.0, < 11",
+    "shipjs": "0.24.0",
     "vue": "^3.2.22",
     "vue-jest": "^5.0.0-0"
   },

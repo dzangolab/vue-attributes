@@ -11,35 +11,35 @@
             <h2>Show</h2>
 
             <StringAttribute
-              label="name"
               v-model="profile.name"
+              label="name"
             />
             <NumberAttribute
-              label="name"
               v-model="profile.age"
+              label="name"
             />
             <MultilineTextAttribute
-              label="name"
               v-model="profile.bio"
+              label="name"
             />
           </div>
           <div class="edit">
             <h2>Edit</h2>
             <form>
               <StringAttribute
+                v-model="profile.name"
                 :edit="true"
                 label="name"
-                v-model="profile.name"
               />
               <NumberAttribute
+                v-model="profile.age"
                 :edit="true"
                 label="name"
-                v-model="profile.age"
               />
               <MultilineTextAttribute
+                v-model="profile.bio"
                 :edit="true"
                 label="name"
-                v-model="profile.bio"
               />
             </form>
           </div>
