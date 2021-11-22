@@ -1,0 +1,33 @@
+$accordion-border-radius: 5px !default;
+$accordion-color-light: #cacaca !default;
+$accordion-color-dark: #898989 !default;
+$accordion-item-margin: 0 0 0 0 !default;
+$accordion-padding-h: 1rem !default;
+$accordion-padding-v: 1rem !default;
+
+.c-attribute {
+  display: flex;
+  flex-direction: column;
+
+  label {
+    font-size: 0.9rem;
+  }
+
+  span {
+    display: block;
+  }
+
+  .input {
+    display: none;
+  }
+
+  &.editing {
+    span {
+      display: none;
+    }
+
+    .input {
+      display: block;
+    }
+  }
+}

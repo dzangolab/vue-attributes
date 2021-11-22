@@ -1,0 +1,30 @@
+@import '~bootstrap/scss/bootstrap.scss';
+
+html {
+  font-size: 20px;
+}
+main {
+  padding-top: 20px;
+
+  section {
+    margin-top: 2rem;
+  }
+}
+
+section {
+  .content {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-areas: "show edit";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+
+    .edit {
+      grid-area: edit;
+    }
+
+    .show {
+      grid-area: show;
+    }
+  }
+}
