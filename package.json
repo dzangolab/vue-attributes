@@ -29,15 +29,20 @@
   ],
   "scripts": {
     "build": "vue-cli-service build --target lib --name attributes ./lib/index.js",
+    "clean": "npm-run-all --parallel clean:*",
+    "clean:cache": "jest --clearCache",
+    "clean:test": "rimraf coverage tests/e2e/projects/*",
     "commitlint": "commitlint --edit $1",
-    "lint": "vue-cli-service lint",
-    "package-sort": "npx sort-package-json",
+    "fix": "npm-run-all --parallel lint:fix format:fix",
+    "lint": "eslint . ./lib --ext .js",
+    "lint:fix": "yarn lint --fix",
     "prepare": "husky install",
-    "prepublishOnly": "yarn run sort-package && yarn run lint && yarn run test && yarn run build",
+    "prepublishOnly": "yarn run test:unit && yarn build",
+    "release": "shipjs prepare",
     "serve": "vue-cli-service serve",
+    "sort-package": "npx sort-package-json",
     "test": "yarn run test:unit",
-    "test:unit": "vue-cli-service test:unit",
-    "release": "shipjs prepare"
+    "test:unit": "vue-cli-service test:unit"
   },
   "devDependencies": {
     "@commitlint/cli": "15.0.0",
