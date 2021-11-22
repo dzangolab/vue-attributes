@@ -22,7 +22,7 @@ export default {
     <label>
       {{ label }}
     </label>
-    <span>
+    <span class="value">
       {{ modelValue }}
     </span>
     <input
