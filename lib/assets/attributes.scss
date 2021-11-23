@@ -13,21 +13,7 @@ $accordion-padding-v: 1rem !default;
     font-size: 0.9rem;
   }
 
-  span {
+  span, .input {
     display: block;
-  }
-
-  .input {
-    display: none;
-  }
-
-  &.editing {
-    span {
-      display: none;
-    }
-
-    .input {
-      display: block;
-    }
   }
 }

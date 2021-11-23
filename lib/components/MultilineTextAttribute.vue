@@ -22,13 +22,17 @@ export default {
     <label>
       {{ label }}
     </label>
-    <span>
-      {{ modelValue }}
-    </span>
     <textarea
+      v-if="edit"
       class="input"
       :value="modelValue"
       @input="$emit('update:modelValue', $event.target.value)"
     />
+    <span
+      v-else
+      class="value"
+    >
+      {{ modelValue }}
+    </span>
   </div>
 </template>

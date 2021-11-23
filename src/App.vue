@@ -12,15 +12,15 @@
 
             <StringAttribute
               v-model="profile.name"
-              label="name"
+              label="Name"
             />
             <NumberAttribute
               v-model="profile.age"
-              label="name"
+              label="Age"
             />
             <MultilineTextAttribute
               v-model="profile.bio"
-              label="name"
+              label="Biography"
             />
           </div>
           <div class="edit">
@@ -29,17 +29,17 @@
               <StringAttribute
                 v-model="profile.name"
                 :edit="true"
-                label="name"
+                label="Name"
               />
               <NumberAttribute
                 v-model="profile.age"
                 :edit="true"
-                label="name"
+                label="Age"
               />
               <MultilineTextAttribute
                 v-model="profile.bio"
                 :edit="true"
-                label="name"
+                label="Biography"
               />
             </form>
           </div>
